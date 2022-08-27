@@ -1,5 +1,5 @@
 # Basic Data sturctures and Algorithms
-- [x] Linear search
+- [x] [Linear search](#1--linear-search)
 - [ ] Binary Search
 - [ ] Bubble sort 
 - [ ] sort
