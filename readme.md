@@ -1,1 +1,1 @@
-init readme creation
+cinit readme creation
