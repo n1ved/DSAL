@@ -2,7 +2,7 @@
 - [x] [Linear search](#1--linear-search)
 - [ ] Binary Search
 - [ ] Bubble sort 
-- [ ] sort
+- [ ] Selection sort
 
 ## 1 . Linear Search
 > Most Simple type of searching
