@@ -21,7 +21,7 @@ step 7 : if LOS = -1 print "element not found"
          else print "element found at LOS+1"
 ```
 ### Code 
-```cpp
+```cpp 
 #include <iostream>
 #define SIZE 1000
 using namespace std;
