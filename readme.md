@@ -63,7 +63,7 @@ step 6 : Find the middle possition (FIRST+LAST)/2 and store the value in MIDDLE
 step 7 : Compare ITEM with MIDDLE
 step 8 : If ARRAY[MIDDLE] = ITEM Display the possition and go to step 11
 step 9 : if ARRAY[MIDDLE] > ITEM set LAST = MIDDLE-1
-step 10: if ARRAY[MIDDLE] > ITEM set FIRST = MIDDLE + 1
+step 10: if ARRAY[MIDDLE] < ITEM set FIRST = MIDDLE + 1
 step 11: End
 ```
 ### Code
