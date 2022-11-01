@@ -46,3 +46,20 @@ int main(){
     return 0;
 }
 ```
+
+##2 . Binary Search
+>used when there are many elements in array , splits array in half and searches . Array should be sorted for this method to work 
+###algorithm
+```
+step 0 : Start
+step 1 : Accept N as number of elements in array
+step 2 : Accept N elements into array ARRAY[N]
+step 3 : Accept ITEM as variable to be searched 
+step 4 : Store the possition of first elements in the ARRAY in FIRST and last element in LAST
+step 5 : Repeat step 6 to 10 while(FIRST<=LAST)
+step 6 : Find the middle possition (FIRST+LAST)/2 and store the value in MIDDLE
+step 7 : Compare ITEM with MIDDLE
+step 8 : If ARRAY[MIDDLE] = ITEM Display the possition and go to step 11
+step 9 : if ARRAY[MIDDLE] > ITEM set LAST = MIDDLE-1
+step 10: if ARRAY[MIDDLE] > ITEM set FIRST = MIDDLE + 1
+step 11: End
