@@ -1,6 +1,6 @@
 # Basic Data sturctures and Algorithms
 - [x] [Linear search](#1--linear-search)
-- [x] [Binary Search]()
+- [x] [Binary Search](#2--binary-search)
 - [ ] Bubble sort 
 - [ ] Selection sort
 
