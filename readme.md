@@ -22,7 +22,7 @@ step 7 : if LOS = -1 print "element not found"
 ```
 
 ### Code 
-```cpp 
+```cpp
 #include <iostream>
 #define SIZE 1000
 using namespace std;
