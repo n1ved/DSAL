@@ -1,6 +1,6 @@
 # Basic Data sturctures and Algorithms
 - [x] [Linear search](#1--linear-search)
-- [ ] Binary Search
+- [x] [Binary Search]()
 - [ ] Bubble sort 
 - [ ] Selection sort
 
@@ -47,9 +47,10 @@ int main(){
 }
 ```
 
-##2 . Binary Search
+## 2 . Binary Search
 >used when there are many elements in array , splits array in half and searches . Array should be sorted for this method to work 
-###algorithm
+
+### algorithm
 ```
 step 0 : Start
 step 1 : Accept N as number of elements in array
@@ -63,3 +64,53 @@ step 8 : If ARRAY[MIDDLE] = ITEM Display the possition and go to step 11
 step 9 : if ARRAY[MIDDLE] > ITEM set LAST = MIDDLE-1
 step 10: if ARRAY[MIDDLE] > ITEM set FIRST = MIDDLE + 1
 step 11: End
+```
+### Code
+```cpp
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main(){
+    int N , ARRAY[1000] , ITEM , FIRST , LAST , MIDDLE , LOC = -1;
+    cin>>N;
+    for(int i=0 ; i<N ; i++){
+        cin>>ARRAY[i];
+    }
+    
+    // For sorting array
+    int len = N/sizeof(ARRAY[0]);
+    sort(ARRAY , ARRAY + len);
+    // Array Sorted 
+
+    cin>>ITEM;
+    FIRST = 0;
+    LAST = N-1;
+    
+    while (FIRST<=LAST)
+    {
+        MIDDLE = (FIRST+LAST)/2 ;
+        if (ARRAY[MIDDLE] == ITEM){
+            LOC = MIDDLE ;
+            break;
+        }
+        else if(ARRAY[MIDDLE] > ITEM){
+            LAST = MIDDLE -1 ;
+        }
+        else if (ARRAY[MIDDLE] < ITEM)
+        {
+            FIRST = MIDDLE+1 ;
+        }
+        
+    }
+
+    if (LOC == -1){
+        cout<<"Item not found in array";
+    }
+    else{
+        cout<<"Item found at "<<LOC+1;
+    }
+    
+    return 0;
+}
+```
+
